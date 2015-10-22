@@ -2,9 +2,36 @@
 <html>
 <head>
 	<title>Listo</title>
+	<link rel="stylesheet" href="app/styles/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	</head>
 <body>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
 	<script type="text/javascript" src="app/scripts/app.js"></script>
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2" id="main-column">
+			<h1>Todo</h1>
+			<div id="newList">
+				New List
+			</div>
+
+			<div class="new-controls">
+
+
+				<button href="#" class="btn btn-default" id="newListItem" style="">New</button>
+
+				<form id="newTaskForm">
+					<label>New Item</label>
+					<input id="newItemInput" placeholder="new task">
+					<button class="btn btn-primary" id="saveNewItem">Save</button>
+					<button class="btn btn-default" id="cancel">Cancel</button>
+				</form>
+			</div>
+
+		</div>
+
+
+	</div>
 </body>
 </html>
