@@ -10,26 +10,42 @@
 
 	<script type="text/javascript" src="app/scripts/app.js"></script>
 	<div class="container">
-		<div class="col-md-8 col-md-offset-2" id="main-column">
-			<h1>Todo</h1>
-			<div id="newList">
-				New List
-			</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" id="main-column">
+				<h1>Todo</h1>
+				<div class="row">
+					<div class="panel col-md-4">
+						New
+						<ul class="list-group" id="newList"></ul>
+					</div>
+					<div class="panel col-md-4">
+						In Progress
+						<ul class="list-group" id="inProgressList"></ul>
+					</div>
 
-			<div class="new-controls">
+					<div class="panel col-md-4">
+						Archived
+						<ul class="list-group" id="archivedList"></ul>
+					</div>
+
+				</div>
+
+				<div class="new-controls">
 
 
-				<button href="#" class="btn btn-default" id="newListItem" style="">New</button>
+					<button href="#" class="btn btn-default" id="newListItem" style="">New</button>
 
-				<form id="newTaskForm">
-					<label>New Item</label>
-					<input id="newItemInput" placeholder="new task">
-					<button class="btn btn-primary" id="saveNewItem">Save</button>
-					<button class="btn btn-default" id="cancel">Cancel</button>
-				</form>
+					<form id="newTaskForm">
+						<label>New Item</label>
+						<input id="newItemInput" placeholder="new task">
+						<button class="btn btn-primary" id="saveNewItem">Save</button>
+						<button class="btn btn-default" id="cancel">Cancel</button>
+					</form>
+				</div>
 			</div>
 
 		</div>
+
 
 
 	</div>
